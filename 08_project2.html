@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Tech Guru</title>
+</head>
+<body>
+    <input type="number" name="numb" id="numb" placeholder="Enter a number">
+    <br>
+    <button onclick="fun()" id="btn">Click me</button>
+</body>
+<script type="text/javascript">
+    function fun(){
+  num =  document.getElementById(numb);
+    
+    var reverse = 0;
+    document.getElementById("Number : "+ numb +"<br>");
+     while(num != 0) {
+         reverse = (reverse*10)+(num%10);
+         num = parseInt(num/10);
+     }
+
+     while(reverse != 0){
+         switch(reverse%10){
+             case 0:
+                 document.write("zero ");
+                 break;
+             case 1:
+                 document.write("one ");
+                 break;
+             case 2:
+                 document.write("two ");
+                 break;
+             case 3:
+                 document.write("three ");
+                 break;
+             case 4:
+                 document.write("four ");
+                 break;
+             case 5:
+                 document.write("five ");
+                 break;
+             case 6:
+                 document.write("six ");
+                 break;
+             case 7:
+                 document.write("seven ");
+                 break;
+             case 8:
+                 document.write("eight ");
+                 break;
+             case 9:
+                 document.write("nine ");
+                 break;
+         }
+         reverse = parseInt(reverse/10);
+     }
+
+    }
+</script>
+</html>
